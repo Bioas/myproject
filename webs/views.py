@@ -11,8 +11,8 @@ def home(request):
 def index(request) :
     return render(request,'Home.html')
 
-def contact(request):
-    return render(request,'Contact.html')
+def manual(request):
+    return render(request,'Manual.html')
 
 def start(request):
     return render(request,'Start.html')
@@ -32,6 +32,7 @@ def download(request):
 def download_config(request):
     return render(request,'Download_Config.html')
 
+#ตรวจสอบรูปเล่มปริญญานิพนธ์ตามที่กำหนดเอง
 def input(request):
     function = request.POST["function"]
     top = request.POST["top"]
@@ -63,6 +64,7 @@ def input(request):
     numpagebottom,symbol_w,symbol_h])
     return render(request,'Download.html')
 
+#กำหนดการตั้งค่ารูปเล่มปริญญานิพนธ์
 def input_csv(request):
     function_csv = request.POST["function"]
     top_csv = request.POST["top"]
@@ -88,6 +90,7 @@ def input_csv(request):
 
     return render(request,'Download_Config.html')
 
+#ตรวจสอบรูปเล่มปริญญานิพนธ์ตามการตั้งค่า
 def upload_csv(request):
     csv_f = request.FILES['csv-file']
     f = request.FILES['file']

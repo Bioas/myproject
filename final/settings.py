@@ -25,7 +25,7 @@ SECRET_KEY = '3=*u4!6ey%aw+uadxjiv+&*u$md1$ac^ef0c_f6ewm-)v%-^xj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -124,5 +124,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'webs/static/pdf_import')
 
 MEDIA_URL = '/media/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 #STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

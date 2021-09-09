@@ -1,6 +1,7 @@
 import csv
 import sys
 
+#นำไฟล์ csv เข้า
 func = sys.argv[1]
 top = sys.argv[2]
 bottom = sys.argv[3]

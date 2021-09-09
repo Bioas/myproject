@@ -8,7 +8,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Start</title>
+    <title>Manual</title>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +19,7 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta name="generator" content="Nicepage 3.7.2, nicepage.com">
     <link href="https://fonts.googleapis.com/css?family=Kanit%7CMerriweather" rel="stylesheet">
-    <meta property="og:title" content="Start">
+    <meta property="og:title" content="Contact">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#478ac9">
     <link rel="canonical" href="index.html">
@@ -27,18 +27,6 @@
 </head>
 
 <body class="u-body">
-    <style>
-    footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 100vw;
-    padding-top: 10px;
-    background-color: #292c2f;
-    }
-    </style>
     <style type='text/css'>
         h1,
         h2,
@@ -104,46 +92,44 @@
             </nav>
         </div>
     </header>
-
-    <section class="ftco-section u-image" style="background-image: url('{% static 'images/test.jpg' %}');" id="carousel_bd04" data-image-width="1980" data-image-height="3000">
-        <center>
-            <div class="row no-gutters u-font">
-                <div class="contact-wrap w-100 p-md-5 p-4">
-                    <br><br>
-                    <div class="col-md-12">
-                        <h2 class="mb-4 u-font">เลือกฟังก์ชั่นการทำงานของคุณ</h2>
-                    </div>
-                    <p>กดปุ่มด้านล่างเพื่อเลือกฟังก์ชั่นในการใช้งานของคุณ</p>
-                    <br>
-                    <div class="col-md-3 u-font">
-                        <a class="btn btn-info btn-lg btn-block" href="/custom" role="button" id="getback">ตรวจสอบรูปเล่มตามที่กำหนดเอง</a>
-                        <a class="btn btn-info btn-lg btn-block" href="/recommend" role="button" id="getback">ตรวจสอบรูปเล่มตามการตั้งค่า</a>
-                        <a class="btn btn-info btn-lg btn-block" href="/setting_config" role="button" id="getback">กำหนดการตั้งค่ารูปเล่ม</a>
-                    </div>
-                    <br>
-                    <br>
-                    <a class="btn btn-warning btn-sm" href="/home" role="button" id="getback">กลับสู่หน้าหลัก</a>
-                    <br>
-                </div>
-                <br>
-            </div>
-    </section>  
-
     
 
-
+    <section class="ftco-section u-image" style="background-image: url('{% static 'images/test.jpg' %}');" id="carousel_bd04" data-image-width="1980" data-image-height="1900">
+        <center>   
+        <div class="container">
+            <div class="row justify-content-center">
+				<div class="col-md-12 text-center mb-5">
+					<h3 class="heading-section u-font">คู่มือการใช้งานโปรแกรมตรวจสอบโครงสร้างและรูปแบบเล่มปริญญานิพนธ์บนเว็บแอปพลิเคชัน</h3>
+				</div>
+			</div>
+            <div class="row no-gutters">
+                <div class="col-md-6 d-flex align-items-stretch">
+                    <div class="info-wrap w-100 p-5 img zoom" style="background-image: url('{% static 'images/manual.jpg' %}');"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="contact-wrap w-100 p-md-5 p-4">
+                        <br><br><br><br>
+                        <div class="col-md-12">
+                            <h4 class="mb-4 u-font">ดาวน์โหลดไฟล์คู่มือการใช้งานโปรแกรม</h4>
+                        </div>
+                        <div class="col-md-8 u-font">
+                            <a class="btn btn-primary btn-lg" href="{% static 'images/manual.pdf' %}" style="width:250px;height:100px" download>
+                                <h2 class="u-font" style="color: aliceblue;"><i class="fa fa-download " aria-hidden="true"></i> Download</h2>
+                            </a>
+                        </div>
+                        <br><br><br><br>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+    
+    
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-f049">
         <div class="u-clearfix u-sheet u-sheet-1">
             <p class="u-small-text u-text u-text-variant u-text-1">©2021 CPE RMUTI&nbsp;<br>Rajamangala University of Technology isan </p>
         </div>
     </footer>
 
-    <script src="{% static 'js/jquery.min.js' %}"></script>
-    <script src="{% static 'js/popper.js' %}"></script>
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
-    <script src="{% static 'js/main.js' %}"></script>
-    
-</body>
-
+  </body>
 </html>

@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import contact, custom, download_config, index,home, setting_congig,start,download,recommend
+from .views import manual, custom, download_config, index,home, setting_congig,start,download,recommend
 from webs import views
 from webs.control import Delete 
 
@@ -11,7 +11,7 @@ urlpatterns = [
     path('start/',start,name='start'),
     path('download',download,name='dowloand'),
     path('dowload_config',download_config,name='dowload_config'),
-    path('contact',contact,name='contact'),
+    path('manual',manual,name='manual'),
     path('delete',Delete.Delete,name='delete'),
     path('recommend',recommend,name='recommend'),
     path('input_csv/',views.input_csv,name='input_csv'),

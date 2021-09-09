@@ -4,7 +4,6 @@ import cv2
 from wand.image import Image as wimage
 from wand.color import Color
 from PIL import Image
-import os
 import sys
 
 filename = sys.argv[1]
