@@ -8,7 +8,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Start</title>
+    <title>ตรวจสอบรูปเล่มปริญญานิพนธ์</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -152,10 +153,6 @@
                             <div class="col-md-6">
                                 <div class="contact-wrap w-100 p-md-5 p-4">
                                     <h3 class="mb-4 u-font">เลือกรูปแบบการตั้งค่ารูปเล่ม</h3>
-                                    <div id="form-message-warning" class="mb-4"></div>
-                                    <div id="form-message-success" class="mb-4">
-                                        Your message was sent, thank you!
-                                    </div>
                                     <form id="uploadForm" action="/input_csv/" method="POST" class="contactForm" onSubmit="return check_input();" enctype='multipart/form-data'>
                                         <div class="row">
                                             <div class="col-md-12">
@@ -163,17 +160,17 @@
                                                     <label class="label" for="function style="font-size:12.5px;"">ตั้งค่ารูปแบบ</label>
                                                     <select name="function" id="function" class="form-control" onclick="fuc(this.value)" required>
 														<option value="">เลือกรูปแบบ</option>
-														<option value="0">Cover</option>
-														<option value="1">Title page</option>
-														<option value="2">Thesis certificate</option>
-														<option value="3">Abstract in Thai</option>
-														<option value="4">Abstract in English</option>
-														<option value="5">Acknowledgements</option>
-														<option value="6">Table of contents</option>
-														<option value="7">Chapter 1-5</option>
-														<option value="8">Bibliography</option>
-														<option value="9">Appendix</option>
-														<option value="10">Provider history</option>
+														<option value="0">ปกนอก</option>
+														<option value="1">ปกใน</option>
+														<option value="2">ใบรับรองปริญญานิพนธ์</option>
+														<option value="3">บทคัดย่อภาษาไทย</option>
+														<option value="4">บทคัดย่อภาษาอังกฤษ</option>
+														<option value="5">กิตติกรรมประกาศ</option>
+														<option value="6">สารบัญ</option>
+														<option value="7">บทที่ 1-5</option>
+														<option value="8">เอกสารอ้างอิง</option>
+														<option value="9">ภาคผนวก</option>
+														<option value="10">ประวัติผู้จัดทำปริญญานิพนธ์</option>
 													</select>
                                                 </div>
                                             </div>

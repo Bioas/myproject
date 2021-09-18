@@ -8,7 +8,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Start</title>
+    <title>ตรวจสอบรูปเล่มปริญญานิพนธ์</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -162,6 +163,8 @@
                                                 <div class="form-group">
                                                     <label class="label" for="file" style="font-size:13.5px;">อัพโหลดไฟล์การตั้งค่า</label> {% csrf_token %}
                                                     <input type="file" class="form-control" name="csv-file" id="csv-file" accept=".csv" required/>
+                                                    <label class="label">*ไฟล์ที่ใช้เป็นประเภท csv เท่านั้น* สามารถหาไฟล์ได้จากฟังก์ชัน กำหนดการตั้งค่ารูปเล่ม</label>
+                                                  
                                                 </div>
                                             </div>
                                             <div class="col-md-6">

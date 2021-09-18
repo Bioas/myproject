@@ -29,6 +29,9 @@ def setting_congig(request):
 def download(request):
     return render(request,'Download.html')
 
+def downloadrecom(request):
+    return render(request,'Downloadrecom.html')
+
 def download_config(request):
     return render(request,'Download_Config.html')
 
@@ -124,4 +127,4 @@ def upload_csv(request):
     file1,function,top,bottom,left,right,heading,content,fist,
     linee,image_point,image_explanation,table1,numpagetop,
     numpagebottom,symbol_w,symbol_h])
-    return render(request,'Download.html')
+    return render(request,'Downloadrecom.html')

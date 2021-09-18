@@ -8,7 +8,8 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Download</title>
+    <title>ตรวจสอบรูปเล่มปริญญานิพนธ์</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
     <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
     <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
     <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
@@ -124,6 +125,7 @@
                     <br>
                     <br>
                     <a class="btn btn-warning" href="{% url 'webs:delete' %}" role="button" id="getback">กลับสู่หน้าหลัก</a>
+                    <a class="btn btn-success" href="{% url 'webs:deletecustom' %}" role="button" id="getback">ตรวจสอบอีกครั้ง</a>
                     <br>
                 </div>
                 <br>

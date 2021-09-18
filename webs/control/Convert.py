@@ -12,15 +12,19 @@ class Convert:
     path = 'webs/static/pdf_import/'+str(filename)
     path_covert = 'webs/static/pdf_export/'
     convert_img = path
-    #print(convert_img)
+
     def __init__(self):
         self.page_images = []
         self.count_name = ''
 
     def set_pdf_to_png(self, convert_img):
         all_pages = wimage(filename=self.path, resolution=300)
+        print(len(all_pages.sequence))
         for i, page in enumerate(all_pages.sequence):
+            print("inloop1",i+1)
+
             with wimage(page) as img:
+                print("inloop2",i+1)
                 img.background_color = Color('white')
                 img.alpha_channel = 'remove'
                 img_buffer = np.asarray(bytearray(img.make_blob("png")), dtype=np.uint8)
